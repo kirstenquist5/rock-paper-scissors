@@ -1,4 +1,9 @@
+// gets user input and computer choice
+
 var userChoice = prompt("Do you choose rock, paper or scissors?");
+
+// found this way of doing the computer choice online. its a bit confusing to me.
+
 var computerChoice = Math.random();
 if (computerChoice <0.34){
     computerChoice = "rock";
@@ -8,6 +13,9 @@ if (computerChoice <0.34){
 else{
     computerChoice = "scissors";
 }
+
+// compares the choices
+
 var compare = function(choice1,choice2){
     if(choice1===choice2){
         return "The result is a tie!";
